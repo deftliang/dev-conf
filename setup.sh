@@ -15,7 +15,7 @@
 
 cat ./.zshrc >> ~/.zshrc
 cp -R ./.config ~/
-
+cp .agignore ~/.agignore
 
 # Install oh my tmux
 ./tmux.sh
