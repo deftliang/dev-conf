@@ -14,7 +14,11 @@
 # git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
 cat ./.zshrc >> ~/.zshrc
-cp -R ./.config ~/
+# cp -R ./.config ~/
+# use lazy nvim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+
 cp .agignore ~/.agignore
 
 # Install oh my tmux
