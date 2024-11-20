@@ -1,4 +1,4 @@
-# My ubuntu 16 Setup
+# My ubuntu 20 Setup
 
 ## Create a new user
 ```bash
@@ -23,6 +23,3 @@ Follow the prompt and finish installing all softwares.
 ```bash
 source ~/.zshrc
 ```
-
-## Optional
-Open .zshrc and replace the theme with powerlevel10k

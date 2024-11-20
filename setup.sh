@@ -1,12 +1,25 @@
 #!/usr/bin/env bash
 
+# hosts
+#sudo cat ./hosts >> /etc/hosts
+
+# zsh
+#sudo apt install -y zsh
+#sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# github 520
+# sed -i "/# GitHub520 Host Start/Q" /etc/hosts && curl https://raw.hellogithub.com/hosts >> /etc/hosts
 
 # System-wise settings
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+# git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
 cat ./.zshrc >> ~/.zshrc
-cp -R ./.config ~/
+ cp -R ./.config ~/
+# use lazy nvim
+#git clone https://github.com/LazyVim/starter ~/.config/nvim
+#rm -rf ~/.config/nvim/.git
 
+cp .agignore ~/.agignore
 
 # Install oh my tmux
 ./tmux.sh
@@ -23,6 +36,8 @@ sudo easy_install3 pip
 
 # Install Rust
 curl https://sh.rustup.rs -sSf | sh
+# Rust 换源
+cat ./rs-config >> ~/.cargo/config
 
 
 # Install Node.js

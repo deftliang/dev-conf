@@ -5,6 +5,10 @@ export EDITOR='nvim'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 alias vim=nvim
+alias vi=nvim
+alias work="cd ~/Projects"
+alias play="cd ~/PlayGround"
+
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -14,4 +18,4 @@ export PATH=~/.npm-global/bin:$PATH
 
 alias t=tmux
 alias a="tmux a"
-alias tm="teamocil mars --here"
+alias tm="teamocil deft --here"
